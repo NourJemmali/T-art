@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> T-art </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+        <script src="myscript.js" ></script>
+    </head>
+    <body>
+        <!--barre de navigation-->
+        <nav>
+            <h1> (logo T-art)</h1>
+            <div class="onglet">
+                
+                    <ul>
+                        <li><a href="#nouv">Nouveautés</a></li>
+                        <li><a href="">Artists</a></li>
+                        <li><a href="">oeuvres</a></li>
+                        <li><a href="#prop">A propos</a></li>
+                    </ul>
+
+                <form>
+                    <input type="search" placeholder="Recherche">
+                    <i class="far fa-user-circle" onclick="window.location.href='login.html'"></i>
+                    <i class="fas fa-shopping-cart" onclick="window.location.href='paiement.html'"></i>
+                </form>
+
+            </div>
+        </nav>
+        <!-- Fin de la barre de navigation -->
+  
+        <!-- Header -->
+        <header>
+            <h1>L'art, c'est aussi tunisien !</h1>
+            <img src="images/tunisie.png">
+            
+        </header>
+        <!-- Fin du header -->
+
+        <!--slide images-->
+        <main>  
+          <!-- Conteneur principal de tout le diaporama -->
+          <div class="diapo">
+              <!-- Conteneur des "diapos" -->
+              <div class="elements">
+                  <!-- Première diapo -->
+                  <div class="element">
+                      <img src="images/painting.jpg" alt="Image 1">
+                      <div class="caption">
+                          <h2>Peinture</h2>
+                          <p>La peinture c'est plus qu'une passion...</p>
+                      </div>
+                  </div>
+                  <!-- Deuxième diapo -->
+                  <div class="element">
+                      <img src="images/photography.jpg" alt="Image 2">
+                      <div class="caption">
+                          <h2>Photographie</h2>
+                          <p>Tout ce qui nous entoure est beau, il suffit juste de regarder </p>
+                      </div>
+                  </div>
+                  <!-- Troisième diapo -->
+                  <div class="element">
+                      <img src="images/astro.jpg" alt="Image 3">
+                      <div class="caption">
+                          <h2>Photographie</h2>
+                          <p>L'avenir de l'astrophotographie en Tunisie</p>
+                      </div>
+                  </div>
+                  <!-- Quatrième diapo -->
+                  <div class="element">
+                      <img src="images/calli.png" alt="Image 2">
+                      <div class="caption">
+                          <h2>Calligraffiti</h2>
+                          <p>El seed nous surpprend encore une fois!</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Flèches de navigation -->
+              <i id="gauche" class="fas fa-chevron-left"></i>
+              <i id="droite" class="fas fa-chevron-right"></i>
+          </div>
+      </main>
+      <!--Nouveauté-->
+      <section class="nouveaute" id="nouv">
+      <h2>Nouveautés</h2>
+          <div class="tableaux">
+              <div class="tableau">
+                  <img src="images/cat1.jpg">
+                  <div class="tableau-header">
+                    <h4 class="nom">Cat</h4>
+                    <h4 class="prix">0000dt</h4>
+                  </div>
+                  <p>artiste 1</p>
+              </div>
+             <div class="tableau">
+                <img src="images/seed1.jpg">
+                <div class="tableau-header">
+                  <h4 class="nom">Calli</h4>
+                  <h4 class="prix">0000dt</h4>
+                </div>
+                <p>artiste 2</p>
+            </div>
+            <div class="tableau">
+                <img src="images/portrait.jpg">
+                <div class="tableau-header">
+                  <h4 class="nom">Portrait</h4>
+                  <h4 class="prix">0000dt</h4>
+                </div>
+                <p>artiste 3</p>
+            </div>
+          </div>
+      </section>
+      <!--footer-->
+      <footer>
+          <h1>A propos de T-ART</h1>
+          <div class="propos" id="prop">
+            <div class="description">
+              <h3>Notre cause</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+ dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+ cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="description">
+                <h3>Nos domaines artistiques</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="description">
+            <h3>Type de paiement</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+   cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <p id="contact">Contact: 00 00 00 00 | Le 
+                <script type="text/javascript" >
+                        var a=new Date;
+                        var da = a.getFullYear()+'/'+(a.getMonth()+1)+'/'+a.getDate();
+                        document.write(da);
+                </script>
+            </p> 
+                
+
+      </footer>
+    </body>
+</html>
