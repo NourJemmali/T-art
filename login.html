@@ -1,0 +1,69 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> T-art </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+        <script src="myscript.js" ></script>
+    </head>
+    <body>
+        <!--barre de navigation-->
+        <nav>
+            <h1> (logo T-art)</h1>
+            <div class="onglet">
+                
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="">Artists</a></li>
+                        <li><a href="oeuvres.html">oeuvres</a></li>
+                        <li><a href="#prop">A propos</a></li>
+                    </ul>
+
+                <form>
+                    <input type="search" placeholder="Recherche">
+                    <i class="far fa-user-circle" onclick="window.location.href='login.html'"></i>
+                    <i class="fas fa-shopping-cart" onclick="window.location.href='paiement.html'"></i>
+                </form>
+
+            </div>
+        </nav>
+        <!-- Fin de la barre de navigation -->
+        <form action="" methode="get">
+            <header class="b"></header>
+            <div class="page" id="page1">
+                <h1>Login</h1>
+                <div>
+                    <label for="pseudo">pseudo:</label>
+                    <input type="text" id="pseudo" name="pseudo" >
+                </div>
+                <div>
+                    <label for="mdp">mot de passe</label>
+                    <input type="text" id="mdp" name="mdp">
+                </div>
+                <input type="button" class="connect" onclick="window.location.href='index.html'" value="se connecter" >
+                <button class="next" type="button">Suivant</button> 
+                <div class="page" id="page2">
+                    <h1>Suite inscription</h1>
+                    <div>
+                        <label for="mail">e-mail:</label>
+                        <input type="text" id="mail" name="mail" >
+                    </div>
+                    <div>
+                        <label for="np">Nom et prénom</label>
+                        <input type="text" id="np" name="np">
+                    </div>
+                    <div>
+                        <label for="num">numéro de telephone</label>
+                        <input type="text" id="numero" name="numero">
+                    </div>
+                    <div>
+                        <label for="num">date de naissance</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <button class="prev" type="button">Précédent</button>
+                    <input type="button" class="connect" onclick="window.location.href='index.html'" value="terminer" >
+                </div>
+        </form>
+    </body>
+</html>
