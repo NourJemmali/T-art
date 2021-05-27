@@ -183,3 +183,57 @@ main{
     #contact{
         color: crimson;
     }
+
+    /* page login/inscription */
+    form[methode=get]{
+        width: 50%;
+        border: 1px solid lightgrey;
+        padding: 20px;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    input[type=text] {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+    }
+    .page{
+        display: none;
+    }
+    header .b{
+        display: flex; /*l'un après l'autre*/
+        justify-content: space-between
+    }
+    .page.num{
+        border: 1px solid blue;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+    .active{
+        color: white;
+        background-color: blue;
+    }
+    /* oueuvre*/
+.panierb{
+        padding: 5px;
+        background: red;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        color: #fafafa;
+        cursor: pointer;
+        margin-top: -10px;
+
+
+    }
+    
